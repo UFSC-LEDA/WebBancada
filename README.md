@@ -66,9 +66,9 @@ WebBancada/
 
 | Componente    | Função                    | Pinos Padrão                             |
 | ------------- | --------------------------- | ----------------------------------------- |
-| HX711 #1      | 2 células (sustentação)  | DOUT=21, SCK=22                           |
-| HX711 #2      | 2 células (arrasto/torque) | DOUT=19, SCK=23                           |
-| Servo Motor   | Controle de ângulo         | GPIO 18 (PWM 50 Hz)                       |
+| HX711 #1      | 2 células (sustentação)  | DOUT=D16, SCK=D17                           |
+| HX711 #2      | 2 células (arrasto/torque) | DOUT=D2, SCK=D4                           |
+| Servo Motor   | Controle de ângulo         | D15 (PWM 50 Hz)                       |
 | SD (opcional) | Armazenamento externo       | CS=5, MISO=19, MOSI=23, SCK=18            |
 | ESP32 Wi-Fi   | Ponto de acesso local       | SSID:`WebBancada` / Senha: `12345678` |
 
@@ -81,7 +81,7 @@ WebBancada/
 ### 1️⃣ Clonar o repositório
 
 ```bash
-git clone https://github.com/<seu-usuario>/WebBancada.git
+git clone https://github.com/UFSC-LEDA/WebBancada.git
 cd WebBancada
 ```
 
