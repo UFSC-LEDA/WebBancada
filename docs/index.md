@@ -1,4 +1,4 @@
-# 🧠 WebBancada
+# ⚖️ WebBancada
 
 Bem-vindo à documentação oficial do **WebBancada**, um sistema embarcado para controle e aquisição de dados em testes de bancada aerodinâmica.
 
