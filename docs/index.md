@@ -13,7 +13,6 @@ A comunicação em tempo real é feita via **WebSockets**, e os dados dos ensaio
 - **[Primeiros Passos](./getting-started.md)**: Um guia completo para configurar o hardware e o software do projeto.
 - **[Detalhes de Hardware](./hardware.md)**: Informações aprofundadas sobre os componentes eletrônicos e suas conexões.
 - **[Detalhes de Software](./software.md)**: Uma visão detalhada da arquitetura do firmware, bibliotecas e como customizar o código.
-- **[Licença](./LICENSE.md)**: Cópia da licença MIT do projeto.
 
 ---
 
