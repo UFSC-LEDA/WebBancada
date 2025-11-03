@@ -1,0 +1,24 @@
+
+
+# --- Configurações do Site ---
+# Estas são usadas no cabeçalho, rodapé e nos metadados do seu site.
+
+title: WebBancada
+description: >- # Esta descrição é usada para metadados de SEO (Search Engine Optimization)
+  Sistema embarcado para controle e aquisição de dados em testes de bancada aerodinâmica, 
+  utilizando um ESP32 como unidade central.
+author: UFSC-LEDA
+
+# --- Configuração do Tema ---
+# "jekyll-theme-primer" é o tema padrão do GitHub.
+# É limpo, minimalista, responsivo e o mais importante:
+# muda automaticamente entre os modos claro e escuro para corresponder às configurações do sistema do usuário.
+theme: jekyll-theme-primer
+
+# --- Plugins ---
+# Plugins padrão do GitHub Pages para melhor funcionalidade e SEO.
+plugins:
+  - jekyll-seo-tag
+
+# Define o processador de Markdown
+markdown: kramdown
