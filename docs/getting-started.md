@@ -18,6 +18,7 @@ O primeiro passo é conectar todos os componentes eletrônicos ao ESP32. Para um
 
 ### Diagrama de Conexão (Exemplo)
 
+<embed src="./WebBancada.pdf" type="application/pdf" width="100%" height="600px" />
 
 **Importante:** O servo motor deve ser alimentado por uma fonte de energia externa que forneça a corrente necessária, não diretamente do pino 5V do ESP32. Lembre-se de conectar o GND da fonte externa ao GND do ESP32.
 
