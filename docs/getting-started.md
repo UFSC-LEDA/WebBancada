@@ -34,7 +34,7 @@ O primeiro passo é conectar todos os componentes eletrônicos ao ESP32. Para um
 1. **Clone o Repositório:**
 
    ```bash
-   git clone [https://github.com/UFSC-LEDA/WebBancada.git](https://github.com/UFSC-LEDA/WebBancada.git)
+   git clone https://github.com/UFSC-LEDA/WebBancada.git
    cd WebBancada
    ```
 2. **Abra o Projeto no VS Code:**
