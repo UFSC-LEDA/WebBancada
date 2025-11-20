@@ -9,7 +9,16 @@
 
   <h1>WebBancada</h1>
 
-  <!-- CONTROLE DO SERVO -->
+  <div class="card">
+    <h2>Status</h2>
+    <p id="status-message">Aguardando conexão...</p>
+    <hr>
+    <h3>Dados da Célula de Carga</h3>
+    <p id="cell-data">C1: N/A, C2: N/A, C3: N/A, C4: N/A</p>
+  </div>
+
+  <br>
+
   <div class="card">
     <h2>Controle do Servo</h2>
 
@@ -28,7 +37,6 @@
 
   <br>
 
-  <!-- CONTROLES DO TESTE -->
   <div class="card">
     <button onclick="sendTare()">Tare</button>
     <button onclick="sendStart()">Start Test</button>
