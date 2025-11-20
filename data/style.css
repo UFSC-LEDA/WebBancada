@@ -1,23 +1,39 @@
 body {
-    font-family: sans-serif;
-    text-align: center;
-    background: #f5f5f5;
-  }
-  h1 {
-    color: #333;
-  }
-  input[type=range] {
-    width: 80%;
-  }
-  button {
-    margin: 5px;
-    padding: 8px 16px;
-    background: #008CBA;
-    color: white;
-    border: none;
-    border-radius: 5px;
-  }
-  button:hover {
-    background: #005f7f;
-  }
-  
+  font-family: sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  background: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #005f7f;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0002;
+}
+
+input[type=number] {
+  width: 80px;
+  padding: 5px;
+}

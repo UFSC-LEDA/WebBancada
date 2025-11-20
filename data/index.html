@@ -6,16 +6,35 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <h1>WebBancada</h1>
-  <div>
-    <label>Servo: </label><input type="range" id="servo" min="0" max="180" value="0">
+
+  <!-- CONTROLE DO SERVO -->
+  <div class="card">
+    <h2>Controle do Servo</h2>
+
+    <button onclick="sendCalibra()">Calibrar Zero</button>
+    <br><br>
+
+    <label>Ir para (absoluto): </label>
+    <input type="number" id="irValue" value="0">
+    <button onclick="sendIr()">Enviar</button>
+    <br><br>
+
+    <label>Mover (relativo): </label>
+    <input type="number" id="moverValue" value="0">
+    <button onclick="sendMover()">Enviar</button>
   </div>
-  <div>
-    <button id="tare">Tare</button>
-    <button id="start">Start Test</button>
+
+  <br>
+
+  <!-- CONTROLES DO TESTE -->
+  <div class="card">
+    <button onclick="sendTare()">Tare</button>
+    <button onclick="sendStart()">Start Test</button>
   </div>
-  <canvas id="chart" width="400" height="200"></canvas>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <script src="app.js"></script>
+
 </body>
 </html>
