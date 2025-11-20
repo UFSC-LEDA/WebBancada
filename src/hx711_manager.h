@@ -13,7 +13,12 @@ public:
   void readForces(ForceData &out);
   static void taskEntry(void *pv);
 
+  // === ADICIONADO ===
+  void tare();
+
 private:
   HX711 hx1, hx2;
+
+  long offset[2] = {0, 0};      // offsets para cada célula HX711
   float calibration[4] = {1,1,1,1};
 };

@@ -1,16 +1,24 @@
 #include "servo_manager.h"
 
-void ServoManager::begin(int p, int c, int f) {
-  pin = p; ch = c;
-  ledcSetup(ch, f, 16);
-  ledcAttachPin(pin, ch);
-  setAngle(0);
+
+void ServoManager::begin(int p) { // Parâmetros 'c' e 'f' removidos
+    pin = p;
+    ESP32PWM::allocateTimer(0);
+	ESP32PWM::allocateTimer(1);
+	ESP32PWM::allocateTimer(2);
+	ESP32PWM::allocateTimer(3);
+    servo.setPeriodHertz(50);
+    servo.attach(pin, 1000, 2000);
+
+    setAngle(0); // começa no zero
 }
 
 void ServoManager::setAngle(float deg) {
-  deg = constrain(deg, 0, 180);
-  float us = SERVO_MIN_US + (deg / 180.0f) * (SERVO_MAX_US - SERVO_MIN_US);
-  uint32_t duty = (us / 20000.0f) * 65535;
-  ledcWrite(ch, duty);
-  currentAngle = deg;
+    deg = constrain(deg, 0.0f, 180.0f);
+
+    // Substitui o cálculo manual complexo por servo.write()
+    // A biblioteca Servo.h no ESP32 faz o cálculo de duty cycle automaticamente.
+    servo.write((int)deg); 
+    
+    currentAngle = deg;
 }

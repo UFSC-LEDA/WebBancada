@@ -1,22 +1,25 @@
 #pragma once
 
 // --- HX711 pins ---
-#define HX1_DOUT 21
-#define HX1_SCK  22
-#define HX2_DOUT 19
-#define HX2_SCK  23
+#define HX1_DOUT 2
+#define HX1_SCK  4
+#define HX2_DOUT 16
+#define HX2_SCK  17
 
 // --- Servo ---
-#define SERVO_PWM_PIN 18
+#define SERVO_PWM_PIN 15
+// Os seguintes parâmetros são agora controlados pela biblioteca Servo.h e foram removidos:
+/*
 #define SERVO_LEDC_CHANNEL 0
 #define SERVO_LEDC_FREQ 50
 #define SERVO_MIN_US 500
 #define SERVO_MAX_US 2500
 #define SERVO_NEUTRAL_US 1500
+*/
 
 // --- Sampling ---
 #define HX711_RATE_HZ 80
-#define SEND_PERIOD_MS 200
+#define SEND_PERIOD_MS 500
 #define CSV_FILENAME "/test.csv"
 
 // --- Wi-Fi ---
